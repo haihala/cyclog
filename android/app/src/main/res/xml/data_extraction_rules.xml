@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12 and newer. The database holds everything the user has recorded,
+  so it is the only thing worth carrying to a new device.
+
+  Cloud backups are end-to-end encrypted with a key derived from the device
+  lock screen (Android 9+), so Google stores the blob but cannot read it.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="." />
+    </device-transfer>
+</data-extraction-rules>

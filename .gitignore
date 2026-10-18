@@ -1,0 +1,72 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/*
+!.vscode/settings.json
+.ccls-cache
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/generated_plugin_registrant.dart
+.dart_tool/
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub-preload-cache/
+.pub/
+/build/
+/coverage/
+flutter_*.png
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/**/GeneratedPluginRegistrant.java
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/.cxx/
+.gradle/
+local.properties
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Release signing secrets — never commit these
+android/key.properties
+*.jks
+*.p12
+*.keystore
+
+# AI related
+.agents/rules/personal-*
+.agents/skills/personal-*
+/.agent-shell/

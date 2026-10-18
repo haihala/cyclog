@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 11 and older. Mirrors data_extraction_rules.xml, which only applies
+  from Android 12 onwards.
+
+  Only the database is included. The -wal and -shm sidecars are deliberately
+  left out: the app folds the write-ahead log into the main file when it goes
+  to the background, so the main file alone is complete.
+-->
+<full-backup-content>
+    <include domain="database" path="." />
+</full-backup-content>
